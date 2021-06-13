@@ -39,6 +39,12 @@ a{
     width: 1920px;
 }
 
+.social
+{
+    width: 100px;
+}
+
+
 /* MEDIA QUERIES */ 
 @media (max-width: 600px)
 {
