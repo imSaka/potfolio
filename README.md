@@ -1,1 +1,1 @@
-Portfolio Project for Codecademys assignment on Full Stack Track
+Portfolio Project for Codecademy's Assignment
