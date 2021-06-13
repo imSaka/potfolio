@@ -32,6 +32,13 @@ a{
     margin-top: 10px;
 }
 
+.firstSection
+{
+    display: flex;
+    background-color: #D8E3E7;
+    height: 600px; 
+}
+
 .line{
     display:block;
     background-image: linear-gradient(90deg, #51C4D3, #1F6E82);
@@ -39,11 +46,48 @@ a{
     width: 1920px;
 }
 
-.social
-{
-    width: 100px;
+.profile{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 160px;
+    flex-flow: wrap column;
+    justify-content: center;
+    width: 600px;
 }
 
+.pic{
+    border-radius: 500px;
+    width: 300px;
+    border: 5px solid white;
+}
+
+.thinLine{
+    background-image: linear-gradient(90deg, #51C4D3, #1F6E82);
+    margin-top: 15px;
+    height: 3px;
+    width: 300px;
+}
+
+.myName{
+    font-size: 22px;
+}
+
+.myCd{
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+.social
+{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+#mail, #behance, #instagram, #twitter, #linkedin{
+    width: 50px;
+}
 
 /* MEDIA QUERIES */ 
 @media (max-width: 600px)
@@ -67,5 +111,25 @@ a{
 
     .line{
         width: 530px;
+    }
+
+    .firstSection
+    {
+        flex-direction: column;
+        background-color: #D8E3E7;
+        height: 800px;
+    }
+
+    .profile
+    {
+        margin-top: 10px;
+        margin-left: 100px;
+        width: 300px;
+    }
+
+    .social{
+        width: 300px;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }
