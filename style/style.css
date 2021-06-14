@@ -9,6 +9,13 @@ a{
     text-decoration: none;
     color: #51C4D3;
 }
+
+iframe{
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
+}
 /* SYTLES FOR CLASSES */ 
 .logo{
     font-weight: bold;
@@ -39,7 +46,7 @@ a{
 {
     display: flex;
     background-color: #D8E3E7;
-    height: 600px; 
+    height: 100%; 
 }
 
 .line{
@@ -95,6 +102,7 @@ a{
 .bio{
     margin-top: 50px;
     margin-left: -200px;
+    margin-bottom: 30px;
 }
 
 .bio > h1 {
@@ -105,6 +113,48 @@ a{
     margin-top: -25px;
     font-size: 35px;
     width: 900px;
+}
+
+.sectionTwo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    background-image: linear-gradient(90deg, #51C4D3, #1F6E82);
+    height: 800px;
+    margin-left: -100px;
+}
+
+.sectionTwoText{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 160px;
+    margin-top: -420px;
+}
+
+.sectionTwoText > h2{
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.sectionTwoText > p{
+    font-size: 20px;
+    width: 300px;
+    margin-top: -30px;
+    margin-bottom: 100px;
+}
+
+.containerSketches{
+    display: grid;
+    height: 620px;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    row-gap: 10px;
+    column-gap: 20px;
+    border: 1px solid red;
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
 /* MEDIA QUERIES */ 
@@ -122,6 +172,7 @@ a{
     .bio > p {
         margin-top: -20px;
         margin-left: 0px;
+        margin-bottom: 50px; 
         width: 700px;
         font-size: 30px;
     }
@@ -129,42 +180,14 @@ a{
     .firstSection
     {
         background-color: #D8E3E7;
-        height: 600px; 
+        height: 100%; 
     }
 }
 
-@media (min-width: 700px, max-width: 1000px){
+@media (max-width: 1190px){
    
-    .bio{
-        display: block;
-        margin-top: 100px;
-        margin-left: -200px;
-    }
-    .bio > h1 {
-        margin-top: -15px;
-        margin-left: 0px;
-    }
-    
-    .bio > p {
-        margin-top: -20px;
-        margin-left: 0px;
-        width: 700px;
-        font-size: 30px;
-    }
-
-    .firstSection
-    {
-        flex-direction: column;
-        background-color: #D8E3E7;
-        height: 600px; 
-    }
-}
-
-
-@media (max-width: 600px)
-{
     .nav{
-        width: 530px;   
+        width: 100%;   
     }
 
     .logo{
@@ -181,7 +204,56 @@ a{
     }
 
     .line{
-        width: 530px;
+        width: 100%;
+    }
+
+    .bio{
+        display: block;
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .bio > h1 {
+        margin-top: -15px;
+    }
+    
+    .bio > p {
+        margin-top: -20px;
+        margin-left: 0px;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .firstSection
+    {
+        flex-direction: column;
+        background-color: #D8E3E7;
+        height: 100%; 
+    }
+}
+
+
+@media (max-width: 600px)
+{
+    .nav{
+        width: 100%;   
+    }
+
+    .logo{
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 12px;
+        margin-left: -25px;
+    }
+
+    .links{
+        width: 300px;
+        margin-top: 10px;
+        margin-left: -70px;
+    }
+
+    .line{
+        width: 100%;
     }
 
     .firstSection
