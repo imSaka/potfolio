@@ -46,7 +46,6 @@ iframe{
     background-color: #D8E3E7;
     height: 100%; 
     width: 1600;
-    border: 1px solid red;
 }
 
 .line{
@@ -58,8 +57,9 @@ iframe{
 
 .profile{
     display: flex;
-    margin-top: 20px;
-    margin-left: 160px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 100px;
     flex-flow: wrap column;
     justify-content: center;
     width: 600px;
@@ -101,7 +101,7 @@ iframe{
 
 .bio{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .bio > h1 {
@@ -160,6 +160,35 @@ iframe{
 
 /* iPhone x */
 @media only screen 
+  and (max-device-width: 375px){ 
+    .logo{
+        font-size: 2rem;
+        margin-left: 50px;
+    } 
+    
+    .firstSection{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile{
+        margin-left: 350px;
+    }
+
+    .bio{
+        margin-top: -90px;
+        margin-left: 50px;
+        width: 850px;
+    }
+
+    .bio > p{
+        margin-top: -40px;
+        font-size: 1.5rem;
+    }
+  }
+
+
+@media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px){ 
     
@@ -172,12 +201,28 @@ iframe{
     }
 
     .logo{
-        font-size: 1rem;
+        font-size: 2rem;
         margin-left: 50px;
     }
 
+    .firstSection{
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .profile{
-        width:100%;
+        margin-left: 350px;
+    }
+
+    .bio{
+        margin-top: -90px;
+        margin-left: 50px;
+        width: 900px;
+    }
+
+    .bio > p{
+        margin-top: -40px;
+        font-size: 1.5rem;
     }
       
 }
@@ -185,28 +230,33 @@ iframe{
 /*iPad*/
 @media only screen 
   and (min-device-width: 812px) 
-  and (max-device-width: 1023px){
+  and (max-device-width: 1073px){
     
     .nav{
         width: 100%;
     }
 
     .links{
-        border: 1px solid red;
         width: 50%;
     }
 
     .logo{
-        width: 200px;
-        font-size: 1.25rem;
+        width: 250px;
+        font-size: 2rem;
         margin-left: 50px;
         margin-top: 10px;
     }
+
+    .profile{
+        margin-left: 50px;
+    }
+
+    
 }
 
 /* Laptops*/
 @media screen 
-  and (min-device-width: 1024px) 
+  and (min-device-width: 1074px) 
   and (max-device-width: 1600px){ 
     
 }
