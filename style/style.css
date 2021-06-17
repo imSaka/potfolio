@@ -29,16 +29,16 @@ iframe{
 
 .logo{
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.75rem;
     color: #D8E3E7;
     margin-left: 25px;
 }
 
 .links{
     display: flex;
-    width: 100;
+    width: 50%;
     justify-content: space-between;
-    font-size: 0.70rem;
+    font-size: 0.85rem;
 }
 
 /*.firstSection
