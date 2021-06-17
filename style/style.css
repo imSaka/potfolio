@@ -26,15 +26,12 @@ iframe{
     width: 100%; 
 }
 
-
 .logo{
     font-weight: bold;
     font-size: 40px;
     color: #D8E3E7;
     margin-left: 50px;
 }
-
-
 
 .links{
     display: flex;
