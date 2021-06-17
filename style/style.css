@@ -17,6 +17,16 @@ iframe{
     height: 300px;
 }
 /* SYTLES FOR CLASSES */ 
+.nav{
+    position: fixed;
+    display: flex;
+    background-color: #132C32;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+
+
 .logo{
     font-weight: bold;
     font-size: 40px;
@@ -24,19 +34,13 @@ iframe{
     margin-left: 50px;
 }
 
-.nav{
-    display: flex;
-    background-color: #132C32;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; 
-    height: 100px;
-}
+
 
 .links{
     display: flex;
+    min-width: 20%;
     width: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 10px;
 }
 
@@ -158,73 +162,29 @@ iframe{
 
 /* MEDIA QUERIES */ 
 
-/* iPhone x */
+/* Smaller than iPhone 
 @media only screen 
-  and (max-device-width: 375px){ 
+  and (min-device-width: 100px)  
+  and (max-device-width: 370px)
+{
     .logo{
-        font-size: 2rem;
-        margin-left: 50px;
+        font-size: 0.5rem;
+        margin-left: 10px;
     } 
     
-    .firstSection{
-        flex-direction: column;
-        justify-content: center;
-    }
+}*/
 
-    .profile{
-        margin-left: 350px;
-    }
-
-    .bio{
-        margin-top: -90px;
-        margin-left: 50px;
-        width: 850px;
-    }
-
-    .bio > p{
-        margin-top: -40px;
-        font-size: 1.5rem;
-    }
-  }
+/* Phone x 
+@media only screen 
+  and (max-width: 390px){ 
+   
+  }*/
 
 
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px){ 
+  and (min-width: 375px) 
+  and (max-width: 812px){ 
     
-    .nav{
-        width: 100%;
-    }
-    
-    .links{
-        width: 50%;
-    }
-
-    .logo{
-        font-size: 2rem;
-        margin-left: 50px;
-    }
-
-    .firstSection{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .profile{
-        margin-left: 350px;
-    }
-
-    .bio{
-        margin-top: -90px;
-        margin-left: 50px;
-        width: 900px;
-    }
-
-    .bio > p{
-        margin-top: -40px;
-        font-size: 1.5rem;
-    }
-      
 }
 
 /*iPad*/
@@ -232,34 +192,17 @@ iframe{
   and (min-device-width: 812px) 
   and (max-device-width: 1073px){
     
-    .nav{
-        width: 100%;
-    }
-
-    .links{
-        width: 50%;
-    }
-
-    .logo{
-        width: 250px;
-        font-size: 2rem;
-        margin-left: 50px;
-        margin-top: 10px;
-    }
-
-    .profile{
-        margin-left: 50px;
-    }
+    
 
     
 }
 
-/* Laptops*/
+/* Laptops 
 @media screen 
   and (min-device-width: 1074px) 
   and (max-device-width: 1600px){ 
     
-}
+}*/
 
 
 
