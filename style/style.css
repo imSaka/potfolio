@@ -29,11 +29,11 @@ iframe{
 
 .logo{
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.75rem;
     color: #D8E3E7;
     margin-right: auto;
-    border: 1px solid red;
-    width: 30%;
+    margin-left: 10px;
+    width: 10%;
 }
 
 .links{
@@ -41,7 +41,6 @@ iframe{
     width: 70%;
     justify-content: space-between;
     font-size: 0.70rem;
-    border: 1px solid red;
 
 }
 
@@ -49,34 +48,32 @@ iframe{
     margin-right: 10px;
 }
 
-/*.firstSection
-{
-    display: flex;
-    background-color: #D8E3E7;
-    height: 100%; 
-    width: 1600;
+.line{
+    position: fixed;
+    margin-top: 47px;
+    width: 100%;
+    height: 0.75rem;
+    background-image: linear-gradient(90deg, #51C4D3, #1F6E82);
 }
 
-.line{
-    
-    background-image: linear-gradient(90deg, #51C4D3, #1F6E82);
-    height: 10px;
+.firstSection
+{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #D8E3E7;
     width: 100%;
+    padding-top: 70px;
 }
 
 .profile{
     display: flex;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-    flex-flow: wrap column;
-    justify-content: center;
-    width: 600px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pic{
     border-radius: 500px;
-    width: 300px;
+    width: 70%;
     border: 5px solid white;
 }
 
@@ -84,7 +81,7 @@ iframe{
     background-image: linear-gradient(90deg, #51C4D3, #1F6E82);
     margin-top: 15px;
     height: 3px;
-    width: 300px;
+    width: 50%;
 }
 
 .myName{
@@ -101,7 +98,7 @@ iframe{
 {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 270px;
 }
 
 #mail, #behance, #instagram, #twitter, #linkedin{
@@ -109,19 +106,19 @@ iframe{
 }
 
 .bio{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     margin-bottom: 0px;
 }
 
 .bio > h1 {
-    font-size: 50px;
+    font-size: 2rem;
 }
 
 .bio > p {
-    margin-top: -25px;
-    margin-right: 100px;
-    font-size: 35px;
-    width: 90%;
+    font-size: 1rem;
+    width: auto;
 }
 
 .sectionTwo{
