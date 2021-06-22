@@ -163,14 +163,12 @@ a{
     border-radius: 25px;
     margin-bottom: 20px;
     width: 100px;
-    flex-shrink: 6;
 }
 
 .sectionThree{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: auto;
     background-color:#d8e3e7;
 }
 
@@ -179,18 +177,33 @@ a{
     color:#51c4d3;
 }
 
-.iconContainer{
+.innerText{
+
     display:flex;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
+}
+.iconContainer{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+}
+.icon{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    margin-bottom: 30px;
 }
 
-.icon{
-    flex-shrink: 30;
-    width: 100px;
+.innerText > p{
+    margin-top: -15px;
 }
 
 /* MEDIA QUERIES */ 
-
 
 /* Smaller than iPhone */
 @media only screen 
@@ -238,6 +251,8 @@ a{
             margin-bottom: 20px;
             width: 200px;
         }
+
+      
 
     }
 /* Smaller than iPhone */
@@ -351,6 +366,46 @@ a{
         border-radius: 25px;
         margin-bottom: 20px;
         width: 200px;
+    }
+
+    .sectionThree{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color:#d8e3e7;
+    }
+    
+    .sectionThree > h2{
+        font-size: 2rem;
+        color:#51c4d3;
+    }
+    
+    .innerText{
+        display:flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconContainer{
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items: space-between;
+        width: 100%;
+        border: 1px solid red;
+    }
+    .icon{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        margin-bottom: 30px;
+        margin-right: 40px;
+        margin-left: 30px;
+    }
+    
+    .innerText > p{
+        margin-top: -15px;
     }
 
 }
