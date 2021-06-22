@@ -370,7 +370,7 @@ a{
 
     .sectionThree{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         background-color:#d8e3e7;
@@ -391,8 +391,10 @@ a{
         flex-direction: row; 
         flex-wrap: wrap;
         align-items: space-between;
-        width: 100%;
+        width: auto;
         border: 1px solid red;
+        margin-left: 40px;
+        margin-right: 50px;
     }
     .icon{
         display: flex; 
@@ -401,7 +403,7 @@ a{
         width: auto;
         margin-bottom: 30px;
         margin-right: 40px;
-        margin-left: 30px;
+        margin-left: 40px;
     }
     
     .innerText > p{
